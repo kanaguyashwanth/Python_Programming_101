@@ -12,6 +12,6 @@ OUTPUT must be a Whole Number
 w = float (weight)
 h = float (height)
 
-bmi = w / (h*h)
+bmi = w / h ** 2
  
 print('Your BMI is : ' + str(int(bmi)))
