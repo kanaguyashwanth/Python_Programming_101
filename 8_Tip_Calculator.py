@@ -8,6 +8,7 @@ How many people to split the bill? 7
 OUTPUT: Each person should pay: $19.93 (Only 2 decimal places)
 '''
 
+print ('Welcome to the Tip Calculator!')
 total = float (input ('What was the total bill?($) '))
 ptip = int (input ('What percentage tip would you like to give? 10,12, or 15? '))
 split = int (input ('How many people to split the bill? '))
