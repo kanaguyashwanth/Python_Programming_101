@@ -9,7 +9,7 @@ print (round(8 / 3, 2)) # Rounding to 2 decimal places
 
 
 # FLOOR DIVISION
-print (8 // 3)			# FLOOR DIVISION ---> Results in INTEGER not FLOAT!
+print (8 // 3)		# FLOOR DIVISION ---> Results in INTEGER not FLOAT!
 print (type(8 // 3))    # Floor division results in Integer
 
 
