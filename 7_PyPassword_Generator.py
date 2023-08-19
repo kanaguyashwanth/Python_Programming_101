@@ -1,4 +1,17 @@
 #Password Generator Project
+
+'''
+NOTE:
+You can use a shuffle the list as below:
+
+import random
+
+password_list = ['j', 'u', 'X', 'S', '9', '8', '2', '6', ')', '#', '*', '(']
+print (password_list)
+random.shuffle (password_list)
+print (password_list)
+'''
+
 import random
 
 letters = [
