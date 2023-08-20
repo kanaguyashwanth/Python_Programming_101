@@ -18,13 +18,11 @@ def jump_hurdle():
     move()
     turn_left()
 
-def move_forward():
-    if front_is_clear():
-        while front_is_clear() and not at_goal():
-            move()
-
-
-if wall_in_front():
+while not at_goal():
+    if wall_in_front():
+        jump_hurdle()
+    elif not wall_in_front():
+        move()
     while wall_in_front():
         jump_hurdle()
         move_forward()
