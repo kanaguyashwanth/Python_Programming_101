@@ -96,8 +96,13 @@ while (i>0 and lives>0):
         remaining_choices -= 1
     '''
     
-    # Lose condition
-    prev_list = blank_list
+    # Lose condition - CHECKS IF THE LETTER IS NOT PRESENT FROM A STRING / PRINT THE STAGE FOR EVERY WRONG MOVE
+    if u_guess not in guess:
+        lives -= 1
+        print(f"Remaining attempts: {lives}")
+        
+        print(stages[lives])
+        
     
     # Updating the list
     for n in range (len(guess)):
@@ -106,13 +111,13 @@ while (i>0 and lives>0):
             i -= 1
     print(blank_list)
     
-    # Lose condition
-    if (prev_list == blank_list):
-        lives -= 1
-        print(f'Remaining lives: {lives}')
-    
     # Win condition
     if blank_list == guess_list:
         print ('You Win!')
         
+    # Lose condition
+    if lives == 0:
+        print ('You lost.')
+
+
 
