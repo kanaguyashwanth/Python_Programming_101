@@ -25,6 +25,8 @@ Output: (March number of days)
 -> If NOT divisible by 400 - Not leap year
 '''
 
+
+
 def leap_year(year):
     if year%4 == 0:
         if year%100 == 0:
@@ -40,8 +42,9 @@ def leap_year(year):
     else:
         #print("Not leap year.")
         return "Not leap year"
-    
-        
+
+
+
 def days_in_month(year, month):
     
     # Valid input
@@ -59,6 +62,8 @@ def days_in_month(year, month):
     for n in range (len(month_days)-1):
         if month == n:
             return month_days[n-1]
+
+
 
 year = int (input("Enter a year: "))
 lp = leap_year(year)
