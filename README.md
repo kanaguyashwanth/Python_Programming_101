@@ -9,5 +9,6 @@ Day - 6: Completed
 Day - 7: Completed
 Day - 8: Completed
 Day - 9: Completed
-Day - 10: Incomplete - Calculator
-Day - 11: Incomplete
+Day - 10: Completed
+Day - 11: Incomplete (Capstone Project)
+Day - 12: Scheduled
