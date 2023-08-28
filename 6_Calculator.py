@@ -30,6 +30,8 @@ Type 'y' to continue calculating with 15.0, or type 'n' to start a new calculati
 
 # CODE:
 
+from art import logo
+
 '''
 def operation(num1, oper, num2):
     
@@ -69,7 +71,7 @@ def calculator():
         "/": divide,
     }
 
-
+    print (logo)
 
     num1 = float (input ("What is the first number?: "))
     # Printing list of Operators
@@ -103,8 +105,11 @@ calculator()
 
 
 '''
+
 NOTE: - calculator function is used to repeat from the beginning - When typed 'n'
       - should_continue FLAG is used to continue with the answer - When typed 'y'
+      
+calculator function is the example of RECURSION - No inputs and no ouputs
 
 '''
 
