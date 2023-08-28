@@ -57,15 +57,6 @@ def divide (num1, num2):
     return num1 / num2
 
 
-num1 = float (input ("What is the first number?: "))
-
-# Printing list of Operators
-operators = ['+', '-', '*', '/']
-for n in range (len(operators)):
-    print (operators[n])
-
-oper = input ('Pick an operation: ')
-num2 = float (input ("What's the next number?: "))
 
 # Creating a Dictionary for Operations (keys: values)
 operations = {
@@ -75,13 +66,39 @@ operations = {
     "/": divide,
 }
 
-function = operations[oper]
-output = function(num1, num2)
 
-print (f'{num1} {oper} {num2} = {output}')
 
-cont_calc = input ("Type 'y' to continue calculating with {output}, or type 'n' to start a new calculation: ")
+num1 = float (input ("What is the first number?: "))
+# Printing list of Operators
+operators = ['+', '-', '*', '/']
+for n in range (len(operators)):
+    print (operators[n])
 
+
+# Setting should_continue FLAG
+should_continue = True
+
+
+while should_continue:
+    oper = input ('Pick an operation: ')
+    num2 = float (input ("What's the next number?: "))
+
+    function = operations[oper]
+    output = function(num1, num2)
+
+    print (f'{num1} {oper} {num2} = {output}')
+
+    if input (f"Type 'y' to continue calculating with {output}, or type 'n' to start a new calculation: ") == "y":
+        num1 = output
+    else:
+        should_continue = False
+
+
+
+
+
+
+'''
 while cont_calc == 'y':
     
     num1 = output
@@ -99,5 +116,7 @@ while cont_calc == 'y':
     
     print (f'{num1} {oper} {num2} = {output}')
     cont_calc = input ("Type 'y' to continue calculating with {output}, or type 'n' to start a new calculation: ")
+'''
+
 
 
