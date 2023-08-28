@@ -10,4 +10,4 @@ Day - 7: Completed
 Day - 8: Completed
 Day - 9: Completed
 Day - 10: Incomplete - Calculator
-Day - 11: Scheduled
+Day - 11: Incomplete
