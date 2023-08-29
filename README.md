@@ -11,4 +11,4 @@ Day - 8: Completed
 Day - 9: Completed
 Day - 10: Completed
 Day - 11: Incomplete (Capstone Project)
-Day - 12: Scheduled
+Day - 12: Scheduled (Pending)
