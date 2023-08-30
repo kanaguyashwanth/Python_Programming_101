@@ -39,8 +39,11 @@ You went over. You lose.
 
 '''
 
-
 def blackjack ():
+    
+    
+    from art import logo
+    print (logo)
     
     
     import random
@@ -63,6 +66,7 @@ def blackjack ():
 
     
     comp_cards = []
+    random_int = random.randint(0, 12)
     comp_cards.append(cards[random_int])
     print (f"Computer's first card: {comp_cards[0]}")
     
@@ -100,18 +104,21 @@ def blackjack ():
                 print (f"Your final hand: {my_cards}, final score: {my_score}")
                 print (f"Computer's final hand: {comp_cards}, final score: {comp_score}")
                 
-                if my_score > comp_score:
+                if (my_score > comp_score) or (comp_score>21):
                     print ("You Win!")
-                    exit()
-                else:
+                    blackjack()
+                elif (my_score < comp_score) and (comp_score<=21):
                     print ("Computer wins.")
-                    exit()
+                    blackjack()
+                elif my_score == comp_score:
+                    print ("It's a draw.")
+                    blackjack()
                 
                 blackjack()
             
         else:
             print("You went over. You lose.")
-            exit()
+            blackjack()
 
 
 blackjack()
