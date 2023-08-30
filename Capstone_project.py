@@ -42,11 +42,76 @@ You went over. You lose.
 
 def blackjack ():
     
+    
+    import random
+    cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
+    random_int = random.randint(0, 12)
+    
+    
+    my_cards = []
+    random_int = random.randint(0, 12)
+    my_cards.append(cards[random_int])
+    random_int = random.randint(0, 12)
+    my_cards.append(cards[random_int])
+    
+    
+    my_score = 0
+    for n in range (len(my_cards)):
+        my_score += my_cards[n]
+    print(f'Your cards: {my_cards}, current score: {my_score}')
+    
 
+    
+    comp_cards = []
+    comp_cards.append(cards[random_int])
+    print (f"Computer's first card: {comp_cards[0]}")
+    
+    
+    comp_score = 0
+    for n in range (len(comp_cards)):
+        comp_score += comp_cards[n]
 
+    
+    should_continue = True
+    
+    
+    choice = 'n'
+    while should_continue:
+        
+        if my_score <= 21:
 
-
-
+            if input("Type 'y' to get another card', type 'n' to pass: ") == 'y':
+                random_int = random.randint(0, 12)
+                my_cards.append(cards[random_int])
+                my_score += my_cards[-1]
+                print (f"Your final hand: {my_cards}, final score: {my_score}")
+                
+                random_int = random.randint(0, 12)
+                comp_cards.append(cards[random_int])
+                comp_score += comp_cards[-1]
+                print (f"Computer's final hand: {comp_cards}, final score: {comp_score}")
+            
+            else:
+                should_continue = False
+                
+                random_int = random.randint(0, 12)
+                comp_cards.append(cards[random_int])
+                comp_score += comp_cards[-1]
+                print (f"Your final hand: {my_cards}, final score: {my_score}")
+                print (f"Computer's final hand: {comp_cards}, final score: {comp_score}")
+                
+                if my_score > comp_score:
+                    print ("You Win!")
+                    exit()
+                else:
+                    print ("Computer wins.")
+                    exit()
+                
+                blackjack()
+            
+        else:
+            print("You went over. You lose.")
+            exit()
 
 
 blackjack()
