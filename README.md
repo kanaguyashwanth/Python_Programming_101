@@ -11,4 +11,5 @@ Day - 8: Completed
 Day - 9: Completed
 Day - 10: Completed
 Day - 11: Completed
-Day - 12: Scheduled (Pending)
+Day - 12: Pending
+Day - 13: Scheduled
