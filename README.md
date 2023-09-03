@@ -12,4 +12,4 @@ Day - 9: Completed
 Day - 10: Completed
 Day - 11: Completed
 Day - 12: Completed
-Day - 13: Scheduled
+Day - 13: Completed
