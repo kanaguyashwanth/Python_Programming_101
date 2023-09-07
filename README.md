@@ -15,4 +15,4 @@ Day - 12: Completed
 Day - 13: Completed
 Day - 14: Completed
 Day - 15: Completed
-Day - 16: Scheduled
+Day - 16: Incomplete
