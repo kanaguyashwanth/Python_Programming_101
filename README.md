@@ -16,5 +16,6 @@ Day - 13: Completed
 Day - 14: Completed
 Day - 15: Completed
 Day - 16: Completed (Difficult) - Classes and Objects example
-Day - 17: In Progress
-Day - 18: Scheduled (Delayed)
+Day - 17: In Progress (Moderate) - Attributes, methods and classes
+Day - 18: Scheduled (Incomplete)
+Day - 19: Scheduled (Delayed)
