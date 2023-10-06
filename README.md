@@ -17,4 +17,4 @@ Day - 14: Completed
 Day - 15: Completed
 Day - 16: Completed (INTERMEDIATE) - Classes and Objects example
 Day - 17: Incomplete (HARD) - Attributes, Methods and Classes
-Day - 18: In Progress (Delayed)
+Day - 18: In Progress (Delayed) (DO IT ASAP!)
